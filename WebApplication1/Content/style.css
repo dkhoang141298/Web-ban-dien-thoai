@@ -1,0 +1,208 @@
+﻿.clear {
+    clear: both;
+}
+#banner {
+    height: 59px;    
+}
+#logo {
+    width: 250px;
+    float: left;
+    padding-top:8px;
+}
+#menutop {
+    padding: 30px 0px 0px 30px;
+}
+#a {
+    display: block;
+    float: right;
+    height: 40px;
+    padding-top: 10px;
+    width: 100px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.80);
+    font-weight: bold;
+    margin-left: 3px;
+    text-decoration: none;
+    color: #FFF;
+}
+.menu {
+    display: block;
+    height: 40px;
+    float: left;
+    padding-top: 10px;
+    width: 100px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.80);
+    font-weight: bold;
+    margin-left: 0px;
+    text-decoration: none;
+    color: #FFF;
+}
+.menu-giohang {
+    float: right;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #FFF;
+}
+#danhmuc{
+    height:100px;
+}
+#dmsp{
+    width: 300px;
+    float: left;
+}
+#slidesp{
+    width: 750px;
+    float: right;
+}
+#menutop a.menu:hover {
+    background-color: #ed8d00;
+    color: #FFF;
+}
+#content {
+    margin-top: 5px;
+}
+
+.module {
+    background-color:rgba(0, 0, 0, 0.80);
+    background-repeat: repeat;
+    margin-top: 2px;
+    padding-top:0px;
+    text-align:left;
+    width:1000px;
+}
+.module h3{
+    font-weight:bold;
+    color:#FFF;
+    text-transform:uppercase;
+    padding-top:10px;
+    font-size:18px;
+    margin-left:20px;
+}
+
+#products {
+float: left;
+}
+#fooder {
+    border-top:groove;
+    margin-top: 10px;
+    float: right;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+.module {
+    background-color:rgba(0, 0, 0, 0.60);
+    width:350px;
+    height:260px;
+    float:left;
+}
+.bannerspm{
+    padding-bottom:0;
+    padding-top:5px;
+    margin-top:10px;
+    text-align:left;
+    background-color:rgba(0, 0, 0, 0.60);
+    width:1110px;
+}
+.bannerspm img{
+    padding-left:10px;
+    padding-top:0;
+    padding-bottom:5px;
+}
+.bannerspm h3{
+    color:#FFF;
+    font-size:20px;
+}
+.myitem {
+    width:370px;
+    text-align:center;
+    border: 1px #e8e1c1 dotted; 
+    float:right;
+    padding:10px;
+}
+.myitem .productName{
+    margin:0;
+    font-size:14px;
+    margin-bottom:10px;
+}
+.myitem .productPrice{
+    color:#F00;
+}
+.myitem .productDetail, .myitem .productBigImg{
+    width:80px;
+    float:left;
+    height:25px;
+    padding-top:10px;
+    display:block;
+    text-decoration:none;
+}
+.myitem .productDetail{
+    background-color:#e8e1c1;
+    margin-left:30px;
+    color:#000;
+}
+.myitem .productBigImg{
+    background-color:#ed8c01;
+    color:#FFF;
+}
+.myitem .productDetail:hover, .myitem .productBigImg:hover{
+    font-weight:bold;
+}
+/*body #dangnhapdangky{
+    float:right;
+}*/
+/*#dangnhapdangky a{
+    
+    float: right;
+
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFF;
+    background-color: red;
+    padding-top:30px;
+}*/
+#giohang{
+    display: block;
+    float: right;
+    height: 40px;
+    padding-top: 10px;
+    width: 150px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.80);
+    font-weight: bold;
+    margin-left: 2px;
+    text-decoration: none;
+    color: #FFF;
+}
+#dangnhapdangky input{
+    display: block;
+    float: left;
+    margin-top:5px;
+    margin-left:90px;
+    height: 25px;    
+    width: 400px;
+    font-size:18px;
+    color:#000000;
+}
+#dangnhapdangky button{
+    display: block;
+    float: left;
+    margin-top:5px;
+    height: 25px;    
+    width: 80px;   
+    font-size:16px;
+    margin-left:8px;
+    text-align:left;
+
+}
+#dangnhapdangky a:hover{
+    color: red;
+}
+#giohang{
+    float:left;
+    margin-right:50px;
+}
