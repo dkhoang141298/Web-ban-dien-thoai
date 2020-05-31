@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <link href="~/Content/shop-homepage.css" rel="stylesheet" />
+    <style>
+        #fb{
+            width:350px;
+            height:150px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div id="banner" class="row">
+                <div id="logo" class="col-md-3">
+                    <a href="@Url.Action("Index","HomePage")"><img src="~/Images/logo.png" /></a>
+                </div>
+                <div id="menutop" class="col-md-9">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a class="menu" href="@Url.Action("Index","HomePage")">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a class="menu" href="@Url.Action("GioiThieu","HomePage")">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a class="menu" href="@Url.Action("LayTatca","HomePage")">Sản phẩm</a>
+                                </li>
+                                <li>
+                                    <a class="menu" href="@Url.Action("BaoHanh","HomePage")">Bảo hành</a>
+                                </li>
+                                <li>
+                                    <a class="menu" href="@Url.Action("LienHe","HomePage")">Liên hệ</a>
+                                </li>
+                                <a class="menu-giohang" href="@Url.Action("Dangnhap","NguoiDung")"> Đăng nhập</a>
+                                <a class="menu-giohang" href="@Url.Action("Dangky","NguoiDung")"> Đăng ký</a>
+                            </ul>
+                            @Html.Action("GiohangPartial", "Giohang")
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Page Content -->
+    <div class="container" style="padding-top:20px">
+        <div class="row">
+            <div class="col-md-3">
+                <p class="lead" style="padding-top:10px;background-color:#000000;color:#FFF;font-weight:bold;padding-bottom:5px">
+                    <span style="padding-left:20px">
+                        <img src="~/Images/icon.png" width="40" />SẢN PHẨM
+                    </span>
+                </p>
+                @Html.Action("DanhmucSP", "HomePage")
+            </div>
+            <div class="col-md-9">
+                <div class="row carousel-holder">
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="~/Images/banner2.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="~/Images/banner4.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="~/Images/banner5.jpg" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div>
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <div class="container">
+        <footer id="fooder">
+            <div class="row">
+
+                <div class="col-md-8">
+                    <h4>THÔNG TIN LIÊN HỆ</h4>
+                    <h4 style="color:red; font-weight:bold;font-size:18px">SHNcom.vn</h4>
+                    <h5>Cam kết nỗ lực hết mình nhằm cung cấp sản phẩm và dịch vụ đúng với những giá trị mà khách hàng mong đợi.</h5>
+                    <img style="width:30px" src="~/Images/icon-call.png" /> <span>Tư vấn mua hàng </span><a style="color:red">033 989 0128</a><br />
+                    <img style="width:30px" src="~/Images/icon-call.png" /> <span>Chăm sóc khách hàng </span><a style="color:red">089 931 8795</a>
+                </div>
+                <div class="col-md-4">
+                    <div id="fb">
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2"></script>
+                        <div class="fb-page" data-href="https://www.facebook.com/SHNStore-394953124666534/?modal=admin_todo_tour" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="~/Scripts/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+</body>
+</html>
